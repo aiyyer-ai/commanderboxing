@@ -22,10 +22,10 @@ html {
 
 .sideBar {
       display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      /* justify-content: center; */
+      align-items: center;
       align-content: flex-start;
-      flex-wrap: wrap;
+      flex-direction: column;
       height: 100%;
       /* Full-height: remove this if you want "auto" height */
       width: 250px;
@@ -152,6 +152,7 @@ html {
 .buttonText {
       font-family: Beleren2016-Bold;
       color: #ffffff;
+      pointer-events: none
 }
 
 .button-container {
@@ -163,7 +164,6 @@ html {
       margin: 10px;
 }
 
-
 .button-container .input-bg {
       position: absolute;
       inset: -2px;
@@ -171,6 +171,27 @@ html {
       border-radius: 10px;
       background: linear-gradient(to right, #0038A8, #9B4F96, #D60270);
       transform: scaleX(1);
+}
+
+.bottom-elements {
+      margin-top: auto;
+      margin-bottom: 50px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.bottom-element {
+      width: 50%;
+}
+
+.bottom-element .button {
+      padding: 10px 15px;
+}
+
+.hidden-element {
+      display: none;
 }
 
 .input-container {
