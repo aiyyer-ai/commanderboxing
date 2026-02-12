@@ -84,6 +84,9 @@ html {
       -webkit-backface-visibility: hidden;
       /* Safari */
       backface-visibility: hidden;
+      mask-image: url('./images/cardBack.webp');
+      mask-repeat: no-repeat;
+      mask-size: contain;
 }
 
 .flip-card-front {
